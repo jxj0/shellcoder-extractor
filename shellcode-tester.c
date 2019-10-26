@@ -9,7 +9,7 @@ int main()
      * equal to main return address 
      */
     ret = (int *)&ret + 2;
-    /* The following sets the return to the 
+    /* The following sets the ret to the 
      * address of shellcode array
      */
     (*ret) = (int)shellcode;
